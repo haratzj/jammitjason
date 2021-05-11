@@ -48,9 +48,9 @@ class App extends React.Component {
     }
   };
 
-  loginToSpotify() {
+  loginToSpotify = () => {
     Spotify.getAccessPermission();
-  }
+  };
 
   searchTracks = (trackName) => {
     console.log(`searching ${trackName}`);
