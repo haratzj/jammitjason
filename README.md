@@ -1,68 +1,33 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# God, Jamm it, Jason!
+## Overview
+This is a personal project that was done to practice ReactJS, OAuth, and making API calls.
 
-## Available Scripts
+## How It Works
+1. Login via OAuth - Upon clicking to log-in, the user is asked to log in to Spotify, and grant permissions for OAuth.
+2. Come with Token - After successful logging-in, the user comes back with the token and now can use the full features
+3. Features
+   1. Search Songs - Search songs from the Spotify library. The response is processed and stored as a *state*, which is then automatically displayed on the screen.
+   2. Add Songs to Playlist - From the search result, users can choose songs to add to their playlist. By repeating Steps 1 to 2, user can populate his/her new playlist. The songs that were selected are instantly added to the playlist box on the screen, also using state.
+   3. Save the New Playlist - Once the user is happy with the new playlist, he/she can save this new playlist, which will be submitted to Spotify. If successful, then the user can enjoy this new playlist on any devices!
+   4. Display the List of Playlists - The user can retrieve the names of the playlists. This was mainly just added to see if the save in Step 3 was successful.
 
-In the project directory, you can run:
+## Technical Stuffs
+1. The business logic was managed in a separate module (Spotify.js), for more readable code.
+2. Components were broken into small modules for modularity.
+3. States were mainly managed in the top component, but many states were also updated in their children components. This was achieved by passing down the appropriate methods to the children components.
+4. JavaScript Class Field was used. This is still not a part of official script, but is highly likely to be included in the next generation of ES as is in stage 3. Using Class Field just makes things slightly easier and saves some typing (don't have to bind the functions in constructor anymore!).
+5. A simple usage of a LifeCycle method, componentDidMount().
+6. ES6 Array methods were actively used, such as map, filter, etc.
 
-### `yarn start`
+## Problem
+There is one problem that hasn't been resolved - CORS. I was using cors-anywhere by Rob (thanks, Rob), but he had to restrict the use of it due to bad people! Thus, some features will fail if you did not request grant from the server manually. Thus I have included some photos to demonstrate how this app works.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Future!
+Such simple project, no improvements are really needed. I could improve the UI for current playlist, but I can't be bothered :'( . One important thing is that I will have to create my own cors anywhere server for other projects as well.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Thank you
+Thank you for reading.
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Acknowledgement
+1. This is based on a project that was part of a Codecademy program, but I improved it a bit and added a new feature.
+2. This was created from Create React App.
