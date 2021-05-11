@@ -1,7 +1,3 @@
-Acknowledgement::
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-This is based on a project that was part of a Codecademy program, but I did it my style and added a new feature.
-
 # God, Jamm it, Jason!
 ## Overview
 This is a personal project that was done to practice ReactJS, OAuth, and making API calls.
@@ -31,3 +27,7 @@ Such simple project, no improvements are really needed. I could improve the UI f
 
 ## Thank you
 Thank you for reading.
+
+## Acknowledgement
+1. This is based on a project that was part of a Codecademy program, but I improved it a bit and added a new feature.
+2. This was created from Create React App.
