@@ -18,6 +18,7 @@ This is a personal project that was done to practice ReactJS, OAuth, and making 
 4. JavaScript Class Field was used. This is still not a part of official script, but is highly likely to be included in the next generation of ES as is in stage 3. Using Class Field just makes things slightly easier and saves some typing (don't have to bind the functions in constructor anymore!).
 5. A simple usage of a LifeCycle method, componentDidMount().
 6. ES6 Array methods were actively used, such as map, filter, etc.
+7. GET / POST requests were made via Spotify API. Which was pretty straight forward thanks to their great documentation!
 
 ## Problem
 There is one problem that hasn't been resolved - CORS. I was using cors-anywhere by Rob (thanks, Rob), but he had to restrict the use of it due to bad people! Thus, some features will fail if you did not request grant from the server manually. Thus I have included some photos to demonstrate how this app works. These can be found under the DEMO folder.
