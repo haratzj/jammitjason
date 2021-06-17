@@ -21,12 +21,12 @@ This is a personal project that was done to practice ReactJS, OAuth, and making 
 7. GET / POST requests were made via Spotify API. Which was pretty straight forward thanks to their great documentation!
 
 ## Problem
-There is one problem that hasn't been resolved - CORS. I was using cors-anywhere by Rob (thanks, Rob), but he had to restrict the use of it due to bad people! Thus, some features will fail if you did not request grant from the server manually. Thus I have included some photos to demonstrate how this app works. These can be found under the DEMO folder.
+There is one problem that hasn't been resolved - CORS. I was using cors-anywhere by Rob (thanks, Rob), but he had to restrict the use of it due to some bad people who were abusing it! Thus, some features will fail if you did not request grant from the server manually. Thus I have included some photos to demonstrate how this app works. These can be found under the DEMO folder.
 
 ## Improvements
-- Such simple project, no improvements are really needed. I could improve the UI for current playlist, but I can't be bothered :).
-- Oh, one important thing is that I will have to create my own cors anywhere server for other projects as well.
-- Also, I could change the Class components to Function components, which seem to be where ReactJS is heading to.
+- The UI for "current playlist" could be improved, but that wasn't the main purpose so I left it at that.
+- Maybe I will have to create my own cors anywhere server for other projects!?
+- I could change the Class components to Function components, which seem to be where ReactJS is heading to.
 
 ## Thank you
 Thank you for reading.
